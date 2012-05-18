@@ -8,37 +8,17 @@
   <parent>
     <groupId>org.scijava</groupId>
     <artifactId>pom-scijava</artifactId>
-    <version>1.9</version>
+    <version>1.13</version>
   </parent>
 
   <groupId>loci</groupId>
   <artifactId>pom-loci</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>pom</packaging>
 
   <name>LOCI Software</name>
   <description>Umbrella project for LOCI software projects.</description>
   <url>http://loci.wisc.edu/software</url>
-
-  <modules>
-    <module>legacy/jvmlink</module>
-    <module>legacy/multi-lut</module>
-    <module>projects/cppwrap-maven-plugin</module>
-    <module>projects/curve-fitter</module>
-    <module>projects/deep-zoom-plugin</module>
-    <module>projects/flow-cytometry</module>
-    <module>projects/jar2lib</module>
-    <module>projects/loci-checks</module>
-    <module>projects/misc-plugins</module>
-    <module>projects/prairie-ome-tiff</module>
-    <!-- <module>projects/slim-curve</module> -->
-    <module>projects/slim-plotter</module>
-    <module>projects/slim-plugin</module>
-    <module>projects/utils</module>
-    <module>projects/visbio</module>
-    <module>projects/visbio-plugins</module>
-    <module>projects/wiscscan-java</module>
-  </modules>
 
   <organization>
     <name>UW-Madison LOCI</name>
@@ -64,13 +44,6 @@
       <archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
     </mailingList>
   </mailingLists>
-
-  <scm>
-    <connection>scm:svn:http://dev.loci.wisc.edu/svn/software</connection>
-    <developerConnection>scm:svn:http://dev.loci.wisc.edu/svn/software</developerConnection>
-    <tag>HEAD</tag>
-    <url>http://dev.loci.wisc.edu/svn/software</url>
-  </scm>
 
   <!-- NB: for project parent -->
   <repositories>

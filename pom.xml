@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-    http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.scijava</groupId>
-    <artifactId>pom-scijava</artifactId>
-    <version>1.13</version>
-  </parent>
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>1.13</version>
+	</parent>
 
-  <groupId>loci</groupId>
-  <artifactId>pom-loci</artifactId>
-  <version>1.2-SNAPSHOT</version>
-  <packaging>pom</packaging>
+	<groupId>loci</groupId>
+	<artifactId>pom-loci</artifactId>
+	<version>1.2-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
-  <name>LOCI Software</name>
-  <url>http://loci.wisc.edu/software</url>
+	<name>LOCI Software</name>
+	<url>http://loci.wisc.edu/software</url>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <configuration>
-          <licenseName>apache_v2</licenseName>
-          <organizationName>Board of Regents of the University of
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>apache_v2</licenseName>
+					<organizationName>Board of Regents of the University of
 Wisconsin-Madison.</organizationName>
-          <projectName>${project.description}.</projectName>
-          <canUpdateDescription>true</canUpdateDescription>
-          <canUpdateCopyright>true</canUpdateCopyright>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+					<projectName>${project.description}.</projectName>
+					<canUpdateDescription>true</canUpdateDescription>
+					<canUpdateCopyright>true</canUpdateCopyright>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
-  <organization>
-    <name>UW-Madison LOCI</name>
-    <url>http://loci.wisc.edu/</url>
-  </organization>
+	<organization>
+		<name>UW-Madison LOCI</name>
+		<url>http://loci.wisc.edu/</url>
+	</organization>
 
-  <issueManagement>
-    <system>Trac</system>
-    <url>http://dev.loci.wisc.edu/trac/software/</url>
-  </issueManagement>
+	<issueManagement>
+		<system>Trac</system>
+		<url>http://dev.loci.wisc.edu/trac/software/</url>
+	</issueManagement>
 
-  <ciManagement>
-    <system>Jenkins</system>
-    <url>http://dev.loci.wisc.edu:8080/</url>
-  </ciManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://dev.loci.wisc.edu:8080/</url>
+	</ciManagement>
 
-  <mailingLists>
-    <mailingList>
-      <name>LOCI Software</name>
-      <subscribe>https://lists.wisc.edu/read/all_forums/subscribe?name=locisoftware</subscribe>
-      <unsubscribe>https://lists.wisc.edu/read/?forum=locisoftware</unsubscribe>
-      <post>locisoftware@lists.wisc.edu</post>
-      <archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
-    </mailingList>
-  </mailingLists>
+	<mailingLists>
+		<mailingList>
+			<name>LOCI Software</name>
+			<subscribe>https://lists.wisc.edu/read/all_forums/subscribe?name=locisoftware</subscribe>
+			<unsubscribe>https://lists.wisc.edu/read/?forum=locisoftware</unsubscribe>
+			<post>locisoftware@lists.wisc.edu</post>
+			<archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
+		</mailingList>
+	</mailingLists>
 
-  <!-- NB: for project parent -->
-  <repositories>
-    <repository>
-      <id>imagej.releases</id>
-      <url>http://maven.imagej.net/content/repositories/releases</url>
-    </repository>
-    <repository>
-      <id>imagej.snapshots</id>
-      <url>http://maven.imagej.net/content/repositories/snapshots</url>
-    </repository>
-  </repositories>
+	<!-- NB: for project parent -->
+	<repositories>
+		<repository>
+			<id>imagej.releases</id>
+			<url>http://maven.imagej.net/content/repositories/releases</url>
+		</repository>
+		<repository>
+			<id>imagej.snapshots</id>
+			<url>http://maven.imagej.net/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
 
 </project>

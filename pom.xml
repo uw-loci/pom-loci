@@ -19,6 +19,31 @@
   <name>LOCI Software</name>
   <url>http://loci.wisc.edu/software</url>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <configuration>
+          <licenseName>apache_v2</licenseName>
+          <organizationName>Board of Regents of the University of
+Wisconsin-Madison.</organizationName>
+          <projectName>${project.description}.</projectName>
+          <canUpdateDescription>true</canUpdateDescription>
+          <canUpdateCopyright>true</canUpdateCopyright>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <organization>
     <name>UW-Madison LOCI</name>
     <url>http://loci.wisc.edu/</url>

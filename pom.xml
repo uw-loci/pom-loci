@@ -13,7 +13,7 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.3</version>
+	<version>1.4</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
@@ -28,7 +28,8 @@
 					<licenseName>apache_v2</licenseName>
 					<organizationName>Board of Regents of the University of
 Wisconsin-Madison.</organizationName>
-					<projectName>${project.description}.</projectName>
+					<projectName>${project.description}</projectName>
+					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 					<canUpdateDescription>true</canUpdateDescription>
 					<canUpdateCopyright>true</canUpdateCopyright>
 				</configuration>

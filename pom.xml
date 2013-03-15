@@ -13,7 +13,7 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.4</version>
+	<version>1.5</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
@@ -32,6 +32,11 @@ Wisconsin-Madison.</organizationName>
 					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 					<canUpdateDescription>true</canUpdateDescription>
 					<canUpdateCopyright>true</canUpdateCopyright>
+					<extraExtensions>
+						<bsh>java</bsh>
+						<config>properties</config>
+						<ijm>java</ijm>
+					</extraExtensions>
 				</configuration>
 			</plugin>
 		</plugins>

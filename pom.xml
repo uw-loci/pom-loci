@@ -8,12 +8,12 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>1.100</version>
+		<version>1.116</version>
 	</parent>
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.11</version>
+	<version>1.12</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
@@ -54,11 +54,6 @@ Wisconsin-Madison.</organizationName>
 		<name>UW-Madison LOCI</name>
 		<url>http://loci.wisc.edu/</url>
 	</organization>
-
-	<issueManagement>
-		<system>Trac</system>
-		<url>http://dev.loci.wisc.edu/trac/software/</url>
-	</issueManagement>
 
 	<ciManagement>
 		<system>Jenkins</system>

@@ -13,7 +13,7 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.12</version>
+	<version>1.13</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
@@ -70,15 +70,11 @@ Wisconsin-Madison.</organizationName>
 		</mailingList>
 	</mailingLists>
 
-	<!-- NB: for project parent -->
 	<repositories>
+		<!-- NB: for project parent -->
 		<repository>
 			<id>imagej.releases</id>
 			<url>http://maven.imagej.net/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>imagej.snapshots</id>
-			<url>http://maven.imagej.net/content/repositories/snapshots</url>
 		</repository>
 	</repositories>
 

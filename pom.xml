@@ -8,12 +8,12 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>1.116</version>
+		<version>1.123</version>
 	</parent>
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.13</version>
+	<version>1.14</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>

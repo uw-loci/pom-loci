@@ -8,12 +8,12 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>1.123</version>
+		<version>1.126</version>
 	</parent>
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.14</version>
+	<version>1.15</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
@@ -28,15 +28,6 @@
 					<licenseName>apache_v2</licenseName>
 					<organizationName>Board of Regents of the University of
 Wisconsin-Madison.</organizationName>
-					<projectName>${project.description}</projectName>
-					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-					<canUpdateDescription>true</canUpdateDescription>
-					<canUpdateCopyright>true</canUpdateCopyright>
-					<extraExtensions>
-						<bsh>java</bsh>
-						<config>properties</config>
-						<ijm>java</ijm>
-					</extraExtensions>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -57,7 +48,7 @@ Wisconsin-Madison.</organizationName>
 
 	<ciManagement>
 		<system>Jenkins</system>
-		<url>http://dev.loci.wisc.edu:8080/</url>
+		<url>http://jenkins.imagej.net/view/LOCI/</url>
 	</ciManagement>
 
 	<mailingLists>
@@ -73,8 +64,8 @@ Wisconsin-Madison.</organizationName>
 	<repositories>
 		<!-- NB: for project parent -->
 		<repository>
-			<id>imagej.releases</id>
-			<url>http://maven.imagej.net/content/repositories/releases</url>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
 

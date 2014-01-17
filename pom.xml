@@ -9,11 +9,12 @@
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
 		<version>1.126</version>
+		<relativePath />
 	</parent>
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.15</version>
+	<version>1.16-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>

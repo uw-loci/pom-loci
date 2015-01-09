@@ -14,11 +14,37 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.19</version>
+	<version>1.20-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
 	<url>http://loci.wisc.edu/software</url>
+	<organization>
+		<name>UW-Madison LOCI</name>
+		<url>http://loci.wisc.edu/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<mailingLists>
+		<mailingList>
+			<name>LOCI Software</name>
+			<subscribe>https://lists.wisc.edu/read/all_forums/subscribe?name=locisoftware</subscribe>
+			<unsubscribe>https://lists.wisc.edu/read/?forum=locisoftware</unsubscribe>
+			<post>locisoftware@lists.wisc.edu</post>
+			<archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
+		</mailingList>
+	</mailingLists>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/view/LOCI/</url>
+	</ciManagement>
 
 	<build>
 		<plugins>
@@ -33,33 +59,5 @@ Wisconsin-Madison.</organizationName>
 			</plugin>
 		</plugins>
 	</build>
-
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
-	<organization>
-		<name>UW-Madison LOCI</name>
-		<url>http://loci.wisc.edu/</url>
-	</organization>
-
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/view/LOCI/</url>
-	</ciManagement>
-
-	<mailingLists>
-		<mailingList>
-			<name>LOCI Software</name>
-			<subscribe>https://lists.wisc.edu/read/all_forums/subscribe?name=locisoftware</subscribe>
-			<unsubscribe>https://lists.wisc.edu/read/?forum=locisoftware</unsubscribe>
-			<post>locisoftware@lists.wisc.edu</post>
-			<archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
-		</mailingList>
-	</mailingLists>
 
 </project>

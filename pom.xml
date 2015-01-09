@@ -60,6 +60,12 @@
 		</mailingList>
 	</mailingLists>
 
+	<scm>
+		<connection>scm:git:git://github.com/uw-loci/pom-loci</connection>
+		<developerConnection>scm:git:git@github.com:uw-loci/pom-loci</developerConnection>
+		<tag>HEAD</tag>
+		<url>http://github.com/uw-loci/pom-loci</url>
+	</scm>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>http://jenkins.imagej.net/view/LOCI/</url>

@@ -14,11 +14,12 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.20</version>
+	<version>1.21-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
 	<url>http://loci.wisc.edu/software</url>
+	<inceptionYear>2012</inceptionYear>
 	<organization>
 		<name>UW-Madison LOCI</name>
 		<url>http://loci.wisc.edu/</url>

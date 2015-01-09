@@ -71,6 +71,18 @@
 		<url>http://jenkins.imagej.net/view/LOCI/</url>
 	</ciManagement>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>net.imagej</groupId>
+				<artifactId>pom-imagej</artifactId>
+				<version>5.2.5</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<build>
 		<plugins>
 			<plugin>

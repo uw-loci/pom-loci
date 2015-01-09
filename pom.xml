@@ -14,7 +14,7 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.20-SNAPSHOT</version>
+	<version>1.20</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>

@@ -14,10 +14,13 @@
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>1.21</version>
+	<version>1.22-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
+	<description>Parent POM for LOCI software projects. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
+
+Projects wishing to use pom-loci as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;inceptionYear&gt;, &lt;developers&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
 	<url>http://loci.wisc.edu/software</url>
 	<inceptionYear>2012</inceptionYear>
 	<organization>

@@ -50,8 +50,6 @@ Projects wishing to use pom-loci as a parent project need to override the &lt;na
 			<timezone>-6</timezone>
 		</developer>
 	</developers>
-	<contributors>
-	</contributors>
 
 	<mailingLists>
 		<mailingList>

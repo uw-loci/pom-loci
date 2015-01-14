@@ -69,6 +69,10 @@ Projects wishing to use pom-loci as a parent project need to override the &lt;na
 		<tag>HEAD</tag>
 		<url>http://github.com/uw-loci/pom-loci</url>
 	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/uw-loci/pom-loci/issues</url>
+	</issueManagement>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>http://jenkins.imagej.net/view/LOCI/</url>

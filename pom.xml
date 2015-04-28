@@ -61,10 +61,10 @@ Projects wishing to use pom-loci as a parent project need to override the &lt;na
 	<mailingLists>
 		<mailingList>
 			<name>LOCI Software</name>
-			<subscribe>https://lists.wisc.edu/read/all_forums/subscribe?name=locisoftware</subscribe>
-			<unsubscribe>https://lists.wisc.edu/read/?forum=locisoftware</unsubscribe>
-			<post>locisoftware@lists.wisc.edu</post>
-			<archive>https://lists.wisc.edu/read/?forum=locisoftware</archive>
+			<subscribe>http://loci.wisc.edu/mailman/listinfo/loci-software</subscribe>
+			<unsubscribe>http://loci.wisc.edu/mailman/listinfo/loci-software</unsubscribe>
+			<post>loci-software@loci.wisc.edu</post>
+			<archive>http://loci.wisc.edu/pipermail/loci-software/</archive>
 		</mailingList>
 	</mailingLists>
 

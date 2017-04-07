@@ -5,20 +5,18 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>7.0.0</version>
+		<version>14.0.0</version>
 		<relativePath />
 	</parent>
 
 	<groupId>loci</groupId>
 	<artifactId>pom-loci</artifactId>
-	<version>2.0.1-SNAPSHOT</version>
+	<version>3.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>LOCI Software</name>
-	<description>Parent POM for LOCI software projects. It ensures that projects all use a compatible build environment, including Java version, as well as versions of dependencies and plugins.
-
-Projects wishing to use pom-loci as a parent project need to override the &lt;name&gt;, &lt;description&gt;, &lt;inceptionYear&gt;, &lt;developers&gt;, &lt;scm&gt;, &lt;issueManagement&gt; and &lt;ciManagement&gt; sections.</description>
-	<url>http://loci.wisc.edu/software</url>
+	<description>Obsolete parent POM. Extend org.scijava:pom-scijava instead!</description>
+	<url>https://github.com/uw-loci/pom-loci</url>
 	<inceptionYear>2012</inceptionYear>
 	<organization>
 		<name>UW-Madison LOCI</name>
@@ -36,15 +34,12 @@ Projects wishing to use pom-loci as a parent project need to override the &lt;na
 		<developer>
 			<id>ctrueden</id>
 			<name>Curtis Rueden</name>
-			<email>ctrueden@wisc.edu</email>
-			<url>http://loci.wisc.edu/people/curtis-rueden</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<url>https://imagej.net/User:Rueden</url>
 			<roles>
-				<role>architect</role>
-				<role>developer</role>
+				<role>founder</role>
+				<role>lead</role>
+				<role>maintainer</role>
 			</roles>
-			<timezone>-6</timezone>
 		</developer>
 	</developers>
 	<contributors>
@@ -76,34 +71,33 @@ Projects wishing to use pom-loci as a parent project need to override the &lt;na
 		<url>https://github.com/uw-loci/pom-loci/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/view/LOCI/</url>
+		<system>None</system>
 	</ciManagement>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>net.imagej</groupId>
-				<artifactId>pom-imagej</artifactId>
-				<version>7.0.0</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<properties>
+		<license.licenseName>apache_v2</license.licenseName>
+		<license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison.</license.copyrightOwners>
+	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
+				<artifactId>maven-enforcer-plugin</artifactId>
 				<configuration>
-					<licenseName>apache_v2</licenseName>
-					<organizationName>Board of Regents of the University of
-Wisconsin-Madison.</organizationName>
+					<rules combine.self="override">
+						<requireProperty>
+							<property>project.artifactId</property>
+							<regex>pom-loci</regex>
+							<regexMessage>~
++---------------------------------------------------------------------+
+| The pom-loci parent is obsolete. Please extend pom-scijava instead! |
++---------------------------------------------------------------------+
+~</regexMessage>
+						</requireProperty>
+					</rules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
